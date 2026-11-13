@@ -7,7 +7,7 @@ go get github.com/vizual4/portscan
 
 # Быстрый старт
 Ниже приведен базовый пример использования сканера для проверки списка портов на хосте:
-
+```Go
 package main
 
 import (
@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/vizual4/portscan"
+	"github.com/example/portscan"
 )
 
 func main() {
@@ -50,7 +50,7 @@ func main() {
 			res.Host, res.Port, res.State, res.Duration)
 	}
 }
-
+```
 ## Устройство публичного API
 
 <Scanner> - Главный управляющий объект. Потокобезопасен, допускает многократное использование.
